@@ -7,8 +7,8 @@
 - [**Madara Orchestrator**](https://github.com/sota-zk-labs/madara-orchestrator): A service running alongside Madara to facilitate
   synchronization between L2 and L1.
 - [**Irelia**](https://github.com/sota-zk-labs/irelia): A
-  Rust-based [Sharp Prover](https://docs.starknet.io/architecture-and-concepts/provers-overview/) equivalent service for submitting
-  verification proofs.
+  Rust-based [Sharp Prover](https://docs.starknet.io/architecture-and-concepts/provers-overview/) equivalent service for generating and
+  submitting verification proofs.
 - [**Madara**](https://github.com/sota-zk-labs/madara): A full node implementation for Starknet.
 - [**Apstark-Kurtosis**](https://github.com/sota-zk-labs/apstark-kurtosis): A tool for setting up a fully functional devnet.
 - [**Navori**](https://github.com/sota-zk-labs/navori): A verifier contract for Apstark.
@@ -79,7 +79,7 @@ submit transactions to when those transactions are committed on L1 and achieve "
 
 ### Progress
 
-- Equivalent Verifier Smart Contract functions written in Move. (Progress: 100%)
+- Equivalent Verifier Smart Contract functions written in Move. (Progress: 95%)
     - Navori (Progress: 90%)
     - Ionia (Progress: 100%)
 - Madara Orchestrator code enabling interaction with Aptos. (Progress: 90%)
