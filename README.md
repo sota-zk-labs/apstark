@@ -32,7 +32,7 @@ This project aims to:
 The following diagram illustrates a **simplified** (not 100% matching the actual implementation) data flow, starting from when users
 submit transactions to when those transactions are committed on L1 and achieve "ACCEPTED ON L1" status.
 
-![Full Topology](full_topology.png)
+![Full Topology](full_topology.svg)
 
 1. **Transaction processing within the L2 network (Madara)**:
     - (1.1): User transactions are placed in the Mempool.
@@ -53,7 +53,7 @@ submit transactions to when those transactions are committed on L1 and achieve "
       3.4, 3.5).
     - (3.6): The proof is then pushed into Aptos via the Navori contract.
     - (3.7): The event listener monitors events and updates the job status in the database (3.8).
-    - (3.9): The job's result is returned to the Proving Job inside Madara Orchestrator (pulling style).
+    - (3.9, 3.10): The job's result is returned to the Proving Job inside Madara Orchestrator (pulling style).
 
 4. **Data availability (Madara Orchestrator)**:
     - (4.0): After retrieving the job's result, the DA Job picks up the state diff and execution trace from the Proving Job.
